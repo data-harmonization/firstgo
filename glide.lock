@@ -1,0 +1,240 @@
+hash: e4c2634ee2912ca3ee2ffa97cdb51c157b12bbd199e0d0fbb906e52af9252e13
+updated: 2016-06-01T13:49:41.436239429+02:00
+imports:
+- name: camlistore.org
+  version: 7b9b9d58a94a2c5767a64dd8d89d477bee5e9af7
+  subpackages:
+  - pkg/googlestorage
+  - pkg/blob
+  - pkg/constants
+- name: github.com/armon/go-radix
+  version: 4239b77079c7b5d1243b7b4736304ce8ddb6f0f2
+- name: github.com/bgentry/speakeasy
+  version: e1439544d8ecd0f3e9373a636d447668096a8f81
+- name: github.com/codegangsta/cli
+  version: 9a18ffad6c548ca4d458d4c30a8aa4d181cf92fa
+- name: github.com/coreos/etcd
+  version: fc06dd1452490ec4b23537addd11e601f6a3b8d0
+  subpackages:
+  - client
+  - pkg/pathutil
+  - pkg/types
+- name: github.com/DATA-DOG/godog
+  version: 9bde6a2b9b5d7c6c94a889ce17974f2ad41bfd9b
+  subpackages:
+  - gherkin
+- name: github.com/davecgh/go-spew
+  version: 5215b55f46b2b919f50a1df0eaa5886afe4e3b3d
+  subpackages:
+  - spew
+- name: github.com/denisenkom/go-mssqldb
+  version: 2a223b1644106bc7ca456c12cde55a80185813ef
+- name: github.com/go-sql-driver/mysql
+  version: 7ebe0a500653eeb1859664bed5e48dec1e164e73
+- name: github.com/golang/glog
+  version: 23def4e6c14b4da8ac2ed8007337bc5eb5007998
+- name: github.com/golang/protobuf
+  version: 1111461c35931a806efe06a9a43ad52a24c608ff
+  subpackages:
+  - proto
+- name: github.com/gorilla/context
+  version: aed02d124ae4a0e94fea4541c8effd05bf0c8296
+- name: github.com/gorilla/mux
+  version: bd09be08ed4377796d312df0a45314e11b8f5dc1
+- name: github.com/jmoiron/sqlx
+  version: a7f971fe8ea891a1a74ddb40c623f5722e28e8a8
+  subpackages:
+  - reflectx
+- name: github.com/lib/pq
+  version: ee1442bda7bd1b6a84e913bdb421cb1874ec629d
+  subpackages:
+  - oid
+- name: github.com/mattn/go-isatty
+  version: 56b76bdf51f7708750eac80fa38b952bb9f32639
+- name: github.com/mattn/go-runewidth
+  version: d6bea18f789704b5f83375793155289da36a3c7f
+- name: github.com/mattn/go-sqlite3
+  version: 38ee283dabf11c9cbdb968eebd79b1fa7acbabe6
+- name: github.com/mitchellh/cli
+  version: 168daae10d6ff81b8b1201b0a4c9607d7e9b82e3
+- name: github.com/mitchellh/go-homedir
+  version: 981ab348d865cf048eb7d17e78ac7192632d8415
+- name: github.com/olekukonko/tablewriter
+  version: 8d0265a48283795806b872b4728c67bf5c777f20
+- name: github.com/pmezard/go-difflib
+  version: d8ed2627bdf02c080bf22230dbb337003b7aba2d
+  subpackages:
+  - difflib
+- name: github.com/rubenv/sql-migrate
+  version: 51aa4cacd5b4e5793f3713fcbc2c12d2fb8cc4ec
+  subpackages:
+  - sqlparse
+- name: github.com/satori/go.uuid
+  version: f9ab0dce87d815821e221626b772e3475a0d2749
+- name: github.com/serenize/snaker
+  version: 8824b61eca66d308fcb2d515287d3d7a28dba8d6
+- name: github.com/Sirupsen/logrus
+  version: f3cfb454f4c209e6668c95216c4744b8fddb2356
+  subpackages:
+  - hooks/test
+- name: github.com/stretchr/objx
+  version: cbeaeb16a013161a98496fad62933b1d21786672
+- name: github.com/stretchr/testify
+  version: 8d64eb7173c7753d6419fd4a9caf057398611364
+  subpackages:
+  - assert
+  - http
+  - mock
+  - require
+- name: github.com/ugorji/go
+  version: b94837a2404ab90efe9289e77a70694c355739cb
+  subpackages:
+  - codec
+- name: github.com/urfave/cli
+  version: 9a18ffad6c548ca4d458d4c30a8aa4d181cf92fa
+- name: github.com/ziutek/mymysql
+  version: e5d54ebfda3f8a15e7b192b65c2aa10cb4fd7e04
+  subpackages:
+  - mysql
+  - godrv
+  - thrsafe
+  - native
+  - autorc
+- name: github.schubergphilis.com/toolkit/sql-schema-migrate
+  version: 660d07206b48c0257cfe43fe1f6824262ce06fad
+- name: go4.org
+  version: 03efcb870d84809319ea509714dd6d19a1498483
+  subpackages:
+  - syncutil/singleflight
+  - readerutil
+- name: golang.org/x/crypto
+  version: 5bcd134fee4dd1475da17714aac19c0aa0142e2f
+  subpackages:
+  - ssh/terminal
+  - md4
+- name: golang.org/x/net
+  version: c4c3ea71919de159c9e246d7be66deb7f0a39a58
+  subpackages:
+  - context
+  - html/atom
+  - html
+  - http2/hpack
+  - lex/httplex
+  - http2
+  - internal/iana
+  - ipv4
+  - ipv6
+  - bpf
+  - internal/timeseries
+  - webdav/internal/xml
+  - trace
+  - netutil
+  - context/ctxhttp
+- name: golang.org/x/oauth2
+  version: c406a4cc4ba462e5dc2f16225c5bd9488f9cbe10
+  subpackages:
+  - google
+  - jwt
+  - internal
+  - jws
+- name: golang.org/x/sys
+  version: d4feaf1a7e61e1d9e79e6c4e76c6349e9cab0a03
+  subpackages:
+  - unix
+  - windows
+  - windows/svc
+  - windows/registry
+  - windows/svc/debug
+  - windows/svc/eventlog
+  - windows/svc/mgr
+- name: golang.org/x/text
+  version: f773ec03ce334298742df7f3108fc0d402646d22
+  subpackages:
+  - encoding
+  - encoding/charmap
+  - encoding/htmlindex
+  - transform
+  - encoding/internal
+  - encoding/internal/identifier
+  - encoding/japanese
+  - encoding/korean
+  - encoding/simplifiedchinese
+  - encoding/traditionalchinese
+  - encoding/unicode
+  - language
+  - internal/utf8internal
+  - runes
+  - internal/tag
+- name: google.golang.org/api
+  version: 63ade871fd3aec1225809d496e81ec91ab76ea29
+  subpackages:
+  - compute/v1
+  - storage/v1
+  - gensupport
+  - googleapi
+  - googleapi/internal/uritemplates
+- name: google.golang.org/appengine
+  version: 7f59a8c76b8594d06044bfe0bcbe475cb2020482
+  subpackages:
+  - urlfetch
+  - internal
+  - internal/app_identity
+  - internal/modules
+  - internal/urlfetch
+  - internal/base
+  - internal/datastore
+  - internal/remote_api
+- name: google.golang.org/cloud
+  version: 1fbaa7ea974691031228bc481570e528b9404a80
+  subpackages:
+  - compute/metadata
+  - internal
+- name: google.golang.org/grpc
+  version: 8213ee577a465c1f314d85748fb29e4eeed59baf
+  subpackages:
+  - codes
+  - credentials
+  - grpclog
+  - internal
+  - metadata
+  - naming
+  - transport
+  - benchmark/grpc_testing
+  - benchmark
+  - benchmark/stats
+  - examples/helloworld/helloworld
+  - examples/route_guide/routeguide
+  - health/grpc_health_v1
+  - interop/grpc_testing
+  - credentials/oauth
+  - interop
+  - stress/grpc_testing
+  - peer
+  - health
+- name: gopkg.in/airbrake/gobrake.v2
+  version: 31c8ff1fb8b79a6947e6565e9a6df535f98a6b94
+- name: gopkg.in/DATA-DOG/go-sqlmock.v1
+  version: 9958e5c69de03e97ec215b23f6fcae1f600c3fb6
+- name: gopkg.in/gemnasium/logrus-airbrake-hook.v2
+  version: 31e6fd4bd5a98d8ee7673d24bc54ec73c31810dd
+- name: gopkg.in/gorp.v1
+  version: c87af80f3cc5036b55b83d77171e156791085e2e
+- name: gopkg.in/tylerb/graceful.v1
+  version: 9a3d4236b03bb5d26f7951134d248f9d5510d599
+- name: gopkg.in/yaml.v1
+  version: 9f9df34309c04878acc86042b16630b0f696e1de
+- name: gopkg.in/yaml.v2
+  version: a83829b6f1293c91addabc89d0571c246397bbf4
+- name: net/http/httptrace
+  version: ""
+- name: sbp.gitlab.schubergphilis.com/api/authservice
+  version: 546a8086b1961bee1a8fde862519d06c65dbcb88
+  subpackages:
+  - authpb
+- name: sbp.gitlab.schubergphilis.com/api/microservice
+  version: 3a8446af815bcf481c9bdc07d65bf638cc2841c8
+  subpackages:
+  - discovery
+  - log
+  - storage
+devImports: []

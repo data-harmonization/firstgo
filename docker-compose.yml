@@ -1,0 +1,47 @@
+version: '2'
+services:
+    openam_stub:
+        image: "registry.services.schubergphilis.com:5000/api/authservice-openamstub:latest"
+    authservice:
+        image: "registry.services.schubergphilis.com:5000/api/authservice-app:latest"
+        ports:
+            - "3080:8000"
+            - "3090:9000"
+        depends_on:
+            - "auth_db"
+        links:
+            - "auth_db"
+            - "openam_stub"
+        environment:
+            OPENAM_URL: "http://openam_stub:8080/am/"
+            MANAGEMENT_DSN: "tcp:auth_db:3306*authservice/root/"
+            DSN: "tcp:auth_db:3306*authservice/root/"
+    auth_db:
+        image: "registry.services.schubergphilis.com:5000/api/authservice-db:latest"
+        environment:
+            MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+            MYSQL_DATABASE: "authservice"
+    myservice:
+        image: "registry.services.schubergphilis.com:5000/api/myservice-app"
+        build: .
+        ports:
+            - "3081:8000"
+            - "3091:9000"
+        links:
+            - "authservice"
+            - "myservice_db"
+        depends_on:
+            - "myservice_db"
+        environment:
+            OUTPUT_SERVICE_ADDRESS: "http://myservice:8000"
+            MANAGEMENT_DSN: "tcp:myservice_db:3306*myservice/root/"
+            TEST_DSN: "tcp:myservice_db:3306*myservice/root/"
+            DSN: "tcp:myservice_db:3306*myservice/root/"
+    myservice_db:
+        image: "registry.services.schubergphilis.com:5000/api/myservice-db"
+        build: ./db
+        ports:
+            - "3386:3306"
+        environment:
+            MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+            MYSQL_DATABASE: "myservice"

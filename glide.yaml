@@ -1,0 +1,33 @@
+package: sbp.gitlab.schubergphilis.com/api/portalservice
+import:
+- package: github.com/golang/protobuf
+  subpackages:
+  - proto
+- package: github.com/rubenv/sql-migrate
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: google.golang.org/grpc
+- package: sbp.gitlab.schubergphilis.com/api/authservice
+  subpackages:
+  - authpb
+- package: sbp.gitlab.schubergphilis.com/api/microservice
+  subpackages:
+  - discovery
+  - log
+  - storage
+- package: gopkg.in/DATA-DOG/go-sqlmock.v1
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
+- package: github.com/stretchr/objx
+- package: github.com/davecgh/go-spew
+  subpackages:
+  - spew
+- package: github.com/pmezard/go-difflib
+  subpackages: 
+  - difflib
+- package: github.com/jmoiron/sqlx
+- package: github.com/serenize/snaker
+ignore:
+- net/http/httptrace

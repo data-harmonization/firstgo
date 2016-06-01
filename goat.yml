@@ -1,0 +1,12 @@
+init_tasks:
+- command: "make check"
+- command: "make test"
+- command: "make run"
+
+watchers:
+- extension: go
+  tasks:
+  - command: "make check"
+  - command: "make test"
+  - command: "make run"
+    nowait: true

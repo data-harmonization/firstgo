@@ -1,0 +1,10 @@
+package: sbp.gitlab.schubergphilis.com/api/myservice/integration
+import:
+- package: github.com/DATA-DOG/godog
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
+- package: gopkg.in/cucumber/gherkin-go.v3
+  subpackages:
+  - log
+  - storage
