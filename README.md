@@ -1,6 +1,9 @@
 # myservice
 A service to send messages to multiple channels (Mail, Slack, SMS and more)
 
+# Create a vendor folder with the dependencies
+make updatedeps
+
 # Local development
 
 ## Build
